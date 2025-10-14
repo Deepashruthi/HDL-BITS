@@ -9,7 +9,6 @@ module top_module();
         #10 in = 1;
         #10 in = 2;
         #10 in = 3;
-        #10 $finish;
     end
 
 endmodule
