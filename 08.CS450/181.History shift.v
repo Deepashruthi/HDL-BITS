@@ -15,9 +15,9 @@ module top_module(
         if (areset)
             predict_history <= 0;
         else if (train_mispredicted)
-            predict_history <= {train_history[31:0],train_taken};
+            predict_history <= {train_history[30:0],train_taken};
         else if (predict_valid)
-            predict_history <= {predict_history[31:0],predict_taken};
+            predict_history <= {predict_history[30:0],predict_taken};
     end
         
 endmodule
